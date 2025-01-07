@@ -1,0 +1,26 @@
+Day-48,September-25th
+
+Modules: OS, Path, FS and their various type
+
+Node.js Core Modules: OS, Path, and FS
+Node.js provides several core modules that are essential for interacting with the operating system, file system, and handling paths. Here’s an overview of the OS, Path, and FS modules, along with their types and key functionalities.
+
+1. OS Module
+The os module provides utilities for interacting with the operating system and hardware information.
+
+Key Features
+Fetch system-related details like CPU, memory, network interfaces, and more.
+
+2. Path Module
+The path module is used to work with file and directory paths.
+
+Key Features
+Provides utilities for handling file paths and resolving directory paths.
+
+3. FS Module (File System)
+The fs module is used to interact with the file system, enabling reading, writing, and managing files and directories.
+
+Types of Methods
+Synchronous Methods: Blocking, e.g., fs.readFileSync().
+Asynchronous Methods: Non-blocking, e.g., fs.readFile().
+Promises API: Modern alternative to callbacks using Promises, e.g., fs.promises.readFile().

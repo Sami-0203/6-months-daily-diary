@@ -1,0 +1,41 @@
+Day-41,September-9th
+
+Structure of redux
+The structure of a Redux application generally consists of several key components: actions, reducers, and store. These components work together to manage and update the application's state in a predictable manner. Here's a breakdown of the common structure of Redux in a React application:
+
+1. Store
+The store holds the entire state of the application. It is created using the createStore() function, and it is the only place where the state is stored and managed.
+
+2. Actions
+Actions are plain JavaScript objects that describe the event or action that occurred. They must have a type field, and can optionally include a payload field to pass additional data with the action.
+Action creators are functions that return action objects.
+
+3. Reducers
+Reducers are pure functions that specify how the state of the application changes in response to an action. A reducer takes the current state and an action as arguments and returns a new state.
+
+4. Store Configuration
+The store is where all the reducers are combined (using combineReducers()) if there are multiple reducers in the app. This store is then provided to the React application via the Provider component from the react-redux library.
+
+
+How to Connect React and Redux
+To connect React with Redux, you need to:
+
+1.Install the necessary dependencies:
+npm install react-redux redux
+
+2.Use the Provider: Wrap your entire React application with the Provider component, which takes the Redux store as a prop. This makes the Redux store accessible to all React components.
+
+3.Using useDispatch and useSelector hooks (for functional components):
+useDispatch: A hook to dispatch actions to Redux.
+useSelector: A hook to access the state from the Redux store.
+
+4.Using connect (for class components): If you're working with class components, you use connect() from react-redux to map the Redux state and dispatch to your component's props.
+
+Store Data in Redux
+
+To store data in Redux, you follow these steps:
+1.Create Actions: Define actions to describe the events that modify the state (e.g., adding or removing data).
+2.Create Reducers: Write a reducer function to handle the actions and modify the state accordingly.
+3.Create the Redux Store: Combine reducers if you have multiple reducers, and create the store.
+4.Dispatch Actions: Use the useDispatch() hook (or dispatch() in class components) to dispatch actions to update the store.
+

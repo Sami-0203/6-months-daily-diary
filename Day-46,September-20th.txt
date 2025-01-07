@@ -1,0 +1,64 @@
+Day-46,September-20th
+
+What is REPL?
+REPL stands for Read-Eval-Print-Loop. It is an interactive environment provided by Node.js where:
+
+Read: The user inputs a command.
+Eval: The command is evaluated.
+Print: The result of the command is displayed.
+Loop: The process repeats until the user exits.
+
+Features of REPL:
+Interactive:
+Execute JavaScript code directly in a terminal.
+Test small code snippets quickly.
+
+Real-Time Feedback:
+See the results of code execution immediately.
+
+Built-In Commands:
+Use .help for a list of commands.
+Use .exit to quit the REPL environment.
+
+Advantages of REPL:
+Ideal for quick debugging and testing.
+Experiment with Node.js APIs.
+Learn JavaScript interactively.
+
+Buffer in Node.js
+
+What is a Buffer?
+A Buffer is a temporary memory allocation in Node.js used to store binary data.
+It is specifically useful because JavaScript (in browsers) does not natively handle raw binary data.
+
+Why Use Buffers?
+Binary Data Handling:
+Buffers allow Node.js to work with data in streams or files where raw bytes need to be processed.
+
+Fixed Memory Allocation:
+Buffers allocate a specific amount of memory, which is useful for operations like file I/O or network requests.
+
+Efficient Data Processing:
+Ideal for reading or writing data in chunks, such as streaming video or audio.
+
+How to Create a Buffer:
+Using the Buffer class
+From an Array
+From a String
+
+Buffer Methods:
+Write to Buffer.
+Convert to String.
+Access Individual Bytes.
+Buffer Length.
+
+
+
+
+
+
+
+
+
+
+

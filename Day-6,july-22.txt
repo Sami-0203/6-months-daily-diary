@@ -1,0 +1,82 @@
+Day-6,july-22
+
+Properties of background,background image,size,repeat,position
+
+CSS provides various properties to style the background of an element, including colors, images, and gradients.
+
+1.background properties
+
+Property	 	Description
+background		Shorthand to set multiple background properties at once.
+background-color	Sets the background color.
+background-image	Sets the background image.
+background-size 	Specifies the size of the background image.
+background-repeat	Specifies how the background image is repeated.
+background-position	Specifies the starting position of the background image.
+
+2.background-image Property
+The background-image property sets an image as the background of an element.
+
+Syntax:
+background-image: url('image.jpg');
+
+3. background-size Property
+Controls the size of the background image.
+
+Syntax:
+div {
+    background-image: url('example.jpg');
+    background-size: contain;
+}
+
+4.background-repeat Property
+Specifies how the background image is repeated.
+
+5.background-position Property
+Specifies the starting position of the background image.
+Syntax:
+div {
+    background-image: url('example.jpg');
+    background-position: center;
+}
+
+
+Gradient and types of gradient
+
+Gradients create smooth transitions between colors and can be used as backgrounds.
+
+Types of Gradients
+
+1.Linear Gradient
+
+Creates a gradient in a straight line.
+Syntax:
+
+background-image: linear-gradient(direction, color1, color2, ...);
+Directions:
+to top (default is to bottom).
+to left, to right, etc.
+
+background-image: linear-gradient(to right, red, blue);
+
+2.Radial Gradient
+
+Creates a gradient radiating from an origin point.
+Syntax:
+
+background-image: radial-gradient(shape size at position, color1, color2, ...);
+Shapes: circle (default), ellipse.
+Example:
+
+background-image: radial-gradient(circle, yellow, green);
+
+3.Conic Gradient (Supported in modern browsers)
+
+Creates a gradient that rotates around a center point.
+Syntax:
+
+background-image: conic-gradient(from angle at position, color1, color2, ...);
+Example:
+
+background-image: conic-gradient(from 0deg, red, yellow, green, blue);
+

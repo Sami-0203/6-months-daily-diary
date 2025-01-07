@@ -1,0 +1,29 @@
+Day-37,September-3rd
+
+High order components in React
+
+A Higher-Order Component (HOC) is a pattern in React for reusing component logic. It is a function that takes a component as an argument and returns a new component with additional props or functionality. HOCs are not part of the React API, but rather a pattern for composing components.
+
+What is an HOC?
+HOC is a function: It takes a component and returns a new component.
+Enhances the original component: It allows you to add additional functionality, props, or behavior to the wrapped component.
+Does not modify the original component: The original component is not mutated; instead, the HOC returns a new component with added functionality.
+
+When to Use HOCs?
+Code reuse: To extract and share logic across components.
+Cross-cutting concerns: To handle common concerns (e.g., authentication, logging, data fetching, etc.) that can be reused across multiple components.
+Component composition: When you need to compose different aspects of functionality into a component.
+
+Benefits of HOCs
+Reusability: You can reuse the same HOC for different components, which promotes code reuse and cleaner code.
+Separation of Concerns: HOCs allow you to separate logic like loading states, data fetching, and authentication checks from the core functionality of a component.
+Enhancement of Components: HOCs allow you to add behavior or props to components without modifying them directly.
+
+Key Points About HOCs
+Don’t Mutate the Original Component: HOCs should never mutate the original component; they should return a new component with enhanced functionality.
+Pass All Props: Make sure the HOC passes down all props to the wrapped component. This is done with {...props} in the example.
+Static Methods: If the wrapped component has static methods, they won't be available on the enhanced component by default. You can solve this using hoist-non-react-statics or similar libraries.
+
+Limitations of HOCs
+Props Collision: Since HOCs modify the component and add extra props, there could be issues if props overlap between the original component and the HOC. Always make sure to manage prop names carefully.
+Debugging: Sometimes it can be harder to debug HOCs, especially with complex compositions, because the component tree gets nested.

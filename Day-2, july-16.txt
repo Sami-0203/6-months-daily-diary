@@ -1,0 +1,161 @@
+Day-2, july-16
+
+Lists in HTML?
+
+In HTML, lists are used to group related items. There are three main types of lists in HTML:
+
+1. Ordered List (<ol>)
+Used for lists where the order of items matters.
+Automatically numbers the list items.
+Syntax:
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+Output:
+First item
+Second item
+Third item
+
+2. Unordered List (<ul>)
+Used for lists where the order of items does not matter.
+Uses bullets as default markers.
+Syntax:
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+Output:
+Item one
+Item two
+Item three
+
+3. Description List (<dl>)
+Used for defining terms and their descriptions.
+Syntax:
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+Output:
+HTML
+HyperText Markup Language
+CSS
+Cascading Style Sheets
+
+Nesting Lists
+You can nest one list inside another to create a hierarchy.
+
+Syntax:
+
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Pineapple</li>
+    </ul>
+  </li>
+  <li>Vegetables
+    <ul>
+      <li>Carrot</li>
+      <li>Broccoli</li>
+    </ul>
+  </li>
+</ul>
+Output:
+Fruits
+Apple
+Pineapple
+Vegetables
+Carrot
+Broccoli
+
+CSS
+
+CSS stands for Cascading Style Sheets. It is a stylesheet language used to control the appearance and layout of HTML documents on the web. CSS allows you to apply styles, such as colors, fonts, spacing, and positioning, to web pages, separating content (HTML) from presentation (CSS). This makes websites easier to design, maintain, and modify.
+
+Key Features of CSS:
+Style Control: Apply styles like colors, fonts, and borders.
+
+Separation of Content and Design: Keeps HTML focused on content and CSS on design.
+
+Reusability: One CSS file can style multiple web pages.
+
+Responsive Design: Helps create layouts that adapt to different devices and screen sizes.
+
+Hierarchy with Cascading Rules: Styles can come from multiple sources (inline, internal, external) and follow a priority order.
+
+Types of CSS:
+Inline CSS: Applied directly within HTML elements.
+
+<p style="color: blue;">This text is blue.</p>
+
+Internal CSS: Written inside a <style> tag in the HTML document's <head>.
+
+<style>
+    p {
+        color: green;
+    }
+</style>
+
+External CSS: Written in a separate .css file linked to the HTML file.
+
+<link rel="stylesheet" href="styles.css">
+
+Properties of CSS
+
+CSS properties define how elements on a webpage are styled and displayed. Here are some common CSS properties grouped by their functionality:
+
+1. Text and Font Properties
+
+Control the appearance of text.
+
+color: Sets the color of the text.
+
+font-family: Specifies the font type.
+
+font-size: Defines the size of the text.
+
+font-weight: Specifies the thickness of the font.
+
+text-align: Aligns text horizontally (e.g., left, center, right).
+
+
+2. Box Model Properties
+
+Control the dimensions and spacing of elements.
+
+width / height: Sets the dimensions of an element.
+
+margin: Sets the space outside the element.
+
+padding: Sets the space inside the element.
+
+border: Defines the border of the element.
+
+3. Background Properties
+
+Define the background of elements.
+
+background-color: Sets the background color.
+
+background-color: lightblue;
+
+background-image: Adds a background image.
+
+background-image: url('image.jpg');
+
+These properties, combined with selectors and values, allow you to create visually engaging and functional web designs.
+
+
+
+
+
+

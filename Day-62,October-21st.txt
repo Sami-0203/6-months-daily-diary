@@ -1,0 +1,44 @@
+Day-62,October-21st
+
+CORS Middleware and Fetching Data in Frontend and Backend
+
+1. What is CORS?
+CORS (Cross-Origin Resource Sharing) is a security feature implemented by web browsers to allow or restrict web applications running at one origin (domain) to make requests to a different origin (domain). By default, browsers block requests from different origins unless the server explicitly allows it.
+
+2. CORS Middleware in Backend (Express)
+In a typical scenario, if you're developing a frontend and backend that run on different ports (for example, React on http://localhost:3000 and Node.js backend on http://localhost:5000), you'll need to enable CORS in your backend so that the frontend can communicate with the backend.
+
+Setting up CORS Middleware in Express
+To enable CORS in your backend, you can use the cors middleware.
+
+Install CORS Middleware:
+First, install the cors package in your Node.js project.
+npm install cors
+
+Setting up CORS in the Server (Express)
+In your server.js file (or wherever you set up your Express server), you need to import and use the cors middleware.
+
+Backend Routes:
+GET /users: Fetches data (list of users) from the database.
+POST /submit: Saves form data from the frontend to the database.
+3. Fetch Data in Frontend (React)
+In the frontend (React), you can use the fetch API to send requests to the backend and handle the response. Here's how to make both GET and POST requests.
+
+Fetch Data (GET request)
+In the React app, you can fetch data from the backend (the /users endpoint that returns a list of users) and display it.
+
+Displaying Data: The fetched users are displayed in a list. If no users are found, a message is shown.
+Fetch Data (POST request from Form)
+In the UserForm component, you can send form data to the backend using a POST request.
+
+4. Run the Application
+Start the Backend Server: Make sure your backend is running with the following command:
+node server.js
+Start the React Frontend: Run the React app in another terminal window:
+
+npm start
+Visit http://localhost:3000 to view the React app.
+
+5. Check the Console
+Frontend: Open the browser's Developer Tools (press Ctrl+Shift+I), go to the Console tab, and you should see the form data logged from the backend response.
+Backend: In your backend terminal, you will see the data being printed when the form is submitted (saved user data).

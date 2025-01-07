@@ -1,0 +1,45 @@
+Day-49,October-1st
+
+HTTP modules and its method
+
+The http module in Node.js is a core module that allows developers to create HTTP servers and make HTTP requests. It provides tools for both server-side and client-side HTTP communication.
+
+HTTP Module Overview
+The http module is commonly used to:
+
+Create an HTTP server.
+Handle HTTP requests and responses.
+Make HTTP requests to other servers (as a client).
+Importing the HTTP Module
+const http = require('http');
+
+Creating an HTTP Server
+
+HTTP Methods
+HTTP methods are used to define the type of operation a client wants to perform on a resource.
+
+Common HTTP Methods
+
+Method	Description
+GET	Retrieve data from the server. Typically used for fetching resources.
+POST	Send data to the server to create a new resource.
+PUT	Update an existing resource or create one if it doesn’t exist.
+DELETE	Delete a resource on the server.
+
+Important Properties and Methods
+Request Object (req)
+The request object represents the HTTP request and contains properties such as:
+
+Property	Description
+req.method	The HTTP method used (e.g., GET, POST).
+req.url		The URL of the request.
+req.headers	An object containing the headers of the request.
+req.on('data')	Event listener to handle incoming data chunks (useful for POST).
+req.on('end')	Event fired when the request has finished sending data.
+
+Advanced Features
+Handling JSON Data
+HTTPS Module: For secure communication, use the https module, which works similarly to http but requires SSL/TLS certificates.
+Middleware Integration: While the http module provides basic functionality, libraries like Express simplify complex HTTP server setups with built-in middleware support.
+
+

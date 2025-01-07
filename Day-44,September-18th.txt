@@ -1,0 +1,46 @@
+Day-44,September-18th
+
+Task based on usestate, useffect using hook.
+
+Task: To-Do List with useState and useEffect Hooks
+Create a simple To-Do List application where users can:
+
+Add tasks.
+Mark tasks as completed.
+Persist tasks in local storage so they remain after a page refresh.
+Features
+Use useState to manage tasks and input state.
+Use useEffect to save and load tasks from local storage.
+
+State Management
+Tasks State: Stores the list of tasks.
+Each task is an object: { id, text, completed }.
+Task Input State: Tracks the current input value.
+
+Effect Hooks
+Load Tasks:
+Runs once on component mount ([] dependency array).
+Reads tasks from local storage and initializes the state.
+Save Tasks:
+Runs every time tasks changes.
+Updates local storage with the current list of tasks.
+
+Functions
+addTask: Adds a new task to the list.
+toggleTaskCompletion: Toggles the completed status of a task.
+deleteTask: Removes a task from the list.
+
+Local Storage Integration
+Saving: Converts the tasks array to a JSON string using JSON.stringify and stores it.
+Loading: Parses the JSON string back into an array using JSON.parse.
+
+How It Works
+User types a task and clicks "Add Task" to add it to the list.
+Tasks are displayed with a checkbox for marking completion and a "Delete" button.
+Tasks are saved in local storage, and the list is restored on a page refresh.
+
+Test Cases
+Add tasks and verify they appear in the list.
+Mark tasks as completed and ensure the UI updates correctly.
+Refresh the page and confirm tasks persist.
+Delete tasks and ensure they are removed from the UI and local storage.

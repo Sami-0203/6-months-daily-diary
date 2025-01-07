@@ -1,0 +1,5 @@
+Day-12,july-31
+
+Practising different layouts and adding media query to them
+
+

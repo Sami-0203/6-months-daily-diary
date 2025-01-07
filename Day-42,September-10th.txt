@@ -1,0 +1,22 @@
+Day-42,September-10th
+
+Map to dispatch function and how add functionality to add to cart button
+To implement a "map to dispatch function" and add functionality to an "Add to Cart" button in a React + Redux application, we follow these steps:
+
+Step 1: Define Action Types and Action Creators
+First, define action types and create action creators for adding items to the cart.
+
+Step 2: Create the Reducer
+Create a reducer that updates the state of the cart when the ADD_TO_CART action is dispatched.
+
+Step 3: Set Up the Redux Store
+Combine reducers (if necessary) and create the Redux store.
+
+Step 4: Map Dispatch to Props
+Use mapDispatchToProps to dispatch the addToCart action when the button is clicked.
+
+Step 5: Display Cart Contents
+Create a component to display the items added to the cart.
+
+Step 6: Wrap the Application with the Redux Provider
+Wrap your app in the Provider component and pass the store.

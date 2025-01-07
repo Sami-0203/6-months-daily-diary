@@ -1,0 +1,30 @@
+Day-43,September-17th
+
+Usestate Hook, Useeffect Hook and question based on them
+
+1. useState Hook
+The useState hook is used to create and manage state in functional components. It allows you to declare state variables and provides a function to update them.
+
+Syntax
+const [state, setState] = useState(initialValue);
+
+state: The current state value.
+setState: A function to update the state.
+initialValue: The initial value of the state.
+
+2. useEffect Hook
+The useEffect hook allows you to perform side effects in functional components. It runs after the render, and you can specify dependencies to control when it executes.
+
+Syntax
+useEffect(() => {
+  
+  return () => {
+  };
+}, [dependencies]);
+
+Callback Function: The code to execute after the render.
+Cleanup Function: A function to clean up resources (e.g., clear intervals).
+Dependencies Array: Controls when the effect runs. Leave empty [] to run only once
+
+
+

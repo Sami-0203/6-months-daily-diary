@@ -1,0 +1,87 @@
+Day-3, july-17
+
+Property of colspan and rowspan in table.
+
+The colspan and rowspan are HTML attributes used within <td> (table data) or <th> (table header) elements in an HTML table to define how many columns or rows a cell should span. These attributes control the cell’s size in relation to other cells in a table.
+
+1. colspan (HTML Attribute)
+Purpose: Specifies the number of columns a table cell should span (i.e., how many columns the cell should occupy horizontally).
+
+Attribute Syntax:
+<td colspan="N">Content</td>
+N is the number of columns the cell will span.
+Example:
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td colspan="2">Spans 2 Columns</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+    </tr>
+</table>
+In this example, the first <td> in the second row spans 2 columns (the first two columns), so it covers the space of two regular cells.
+
+2. rowspan (HTML Attribute)
+Purpose: Specifies the number of rows a table cell should span (i.e., how many rows the cell should occupy vertically).
+
+Attribute Syntax:
+<td rowspan="N">Content</td>
+N is the number of rows the cell will span.
+Example:
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Spans 2 Rows</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+    </tr>
+</table>
+In this example, the first <td> in the second row spans 2 rows, so it occupies space in both the second and third rows.
+
+Key Points:
+colspan is used to span columns horizontally.
+rowspan is used to span rows vertically.
+Both colspan and rowspan can be used together in a single cell to control the layout of table data effectively.
+These attributes are part of HTML and cannot be controlled with CSS directly.
+Example of Both colspan and rowspan Combined:
+
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2" colspan="2">Spans 2 Rows and 2 Columns</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+        <td>Cell 4</td>
+    </tr>
+</table>
+In this table, the first <td> spans both 2 rows and 2 columns, creating a larger cell that overlaps multiple areas in the table.
+
+How to create different types of table using this.
+
+Basic Table with colspan and rowspan.
+
+Table with Merged Cells (Using rowspan).
+
+Table with Both colspan and rowspan.
+
+By using colspan and rowspan, you can create dynamic and complex table layouts. These attributes allow you to merge cells in both horizontal and vertical directions, offering flexibility in table design. They are especially useful for creating tables with varied cell sizes, like calendars, complex data tables, or nested tables.
+
+Practice questions related to tis topic.

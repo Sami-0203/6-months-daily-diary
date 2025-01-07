@@ -1,0 +1,45 @@
+Day-57,October-14th
+
+Create various API's to read,delete,update with the database in mongoose
+
+Creating various APIs to perform CRUD operations (Create, Read, Update, Delete) with MongoDB using Mongoose in a Node.js backend application involves the following steps:
+
+Set up the environment: Install necessary packages like express, mongoose, etc.
+Define the model schema.
+Create routes to handle different CRUD operations.
+Let’s go step by step.
+
+1. Set Up the Environment
+Make sure you have Node.js and MongoDB installed.
+
+Initialize a Node.js project:
+npm init -y
+
+Install necessary packages:
+npm install express mongoose
+
+2. Set Up MongoDB Connection
+
+3. Define the Mongoose Schema and Model
+Example: We can define a simple User model with the fields name, age, and city.
+
+4. Create the CRUD APIs
+a. Create a User (POST)
+b. Get All Users (GET)
+c. Get a User by ID (GET)
+d. Update a User (PUT)
+e. Delete a User (DELETE)
+
+5. Start the Server
+
+// Start the Express server
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+
+
+
+
+
+
+

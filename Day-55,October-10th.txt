@@ -1,0 +1,58 @@
+Day-55,October-10th
+
+Commands to perform various operations/CRUD operations on mongosh.
+
+Here are the basic CRUD (Create, Read, Update, Delete) operations you can perform using mongosh (MongoDB shell) with various commands for each operation.
+
+1. Create Operations (Insert)
+Insert a Single Document
+Explanation: Inserts one document into the specified collection.
+
+2. Read Operations (Find)
+Find All Documents
+db.collectionName.find();
+Explanation: Retrieves all documents from the collection.
+
+
+3. Update Operations
+Update a Single Document
+db.collectionName.updateOne(
+    { name: "John Doe" },       // Filter condition
+    { $set: { age: 31 } }       // Update operation
+);
+Explanation: Updates a single document that matches the condition. Here, it sets age to 31 for "John Doe".
+
+4. Delete Operations
+Delete a Single Document
+db.collectionName.deleteOne({ name: "John Doe" });
+Explanation: Deletes the first document that matches the condition.
+
+Remove All Documents
+db.collectionName.deleteMany({});
+Explanation: Deletes all documents in the collection.
+
+Database and Collection Operations
+List Databases
+show databases;
+Explanation: Lists all databases available in MongoDB.
+
+Create a Database
+use myNewDatabase;
+Explanation: Switches to myNewDatabase (or creates it if it doesn’t exist).
+
+Show Collections in a Database
+show collections;
+Explanation: Lists all collections in the current database.
+
+Create a Collection
+db.createCollection("myCollection");
+Explanation: Creates a new collection named myCollection.
+
+Drop a Collection
+db.myCollection.drop();
+Explanation: Drops the myCollection collection.
+
+Drop a Database
+db.dropDatabase();
+Explanation: Drops the current database.
+

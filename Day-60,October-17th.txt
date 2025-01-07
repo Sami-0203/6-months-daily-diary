@@ -1,0 +1,35 @@
+Day-60,October-17th
+
+Create form and connect html file with other and save data in database
+
+To create a form in HTML and save the data to a MongoDB database using Node.js and Mongoose, we'll break down the process into the following steps:
+
+Create an HTML Form to Collect User Data
+Set Up a Node.js Backend to Handle Requests
+Connect to MongoDB using Mongoose
+Save the Form Data to the MongoDB Database
+1. Create an HTML Form (Frontend)
+Create a simple HTML file with a form that collects user information, such as name, age, and city.
+for example, index.html
+The form will collect data for the name, age, and city fields.
+The form sends a POST request to the /submit endpoint on the server.
+
+2. Set Up Node.js Backend
+Now, set up the backend using Express.js to handle the POST request from the form and save the data to MongoDB.
+
+Install Required Packages:
+Express: Web framework for Node.js.
+Mongoose: MongoDB ODM for easier interaction with the database.
+Body-parser: Middleware to parse incoming request bodies.
+npm init -y
+npm install express mongoose body-parser
+Backend Code:
+Create a new file for the backend server, for example, server.js.
+
+3. Run the Server
+After creating the necessary files, run your Node.js server.
+
+Now, open a browser and go to http://localhost:3000. You will see the HTML form. After filling out the form and submitting it, the data will be sent to the server and saved in the MongoDB database.
+
+5. MongoDB Setup
+Make sure MongoDB is installed and running on your local machine, or use a MongoDB cloud service like MongoDB .

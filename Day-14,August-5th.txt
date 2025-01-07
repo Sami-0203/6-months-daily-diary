@@ -1,0 +1,58 @@
+Day-14,August-5th
+
+Basics of bootstrap 
+
+1.Getting Started:
+Include Bootstrap in your project using:
+CDN: Add the CSS and JS links from Bootstrap's official site.
+Download: Download Bootstrap files and include them locally.
+Package Managers: Use npm to install Bootstrap.
+
+2.Responsive Design:
+Uses a grid system based on 12 columns to create layouts.
+Includes breakpoints (xs, sm, md, lg, xl, xxl) to handle various screen sizes.
+
+3.CSS Utilities:
+Predefined classes for spacing (m-3, p-2), colors (text-primary, bg-success), typography (fw-bold, text-uppercase), and more.
+
+4.JavaScript Components:
+Requires Bootstrap JS or libraries like Popper.js for interactive features.
+
+Tool-Tip and various other components
+
+Tooltips
+Tooltips are small pop-up messages that appear when a user hovers over or focuses on an element.
+
+How to Use Tooltips:
+1.Basic Setup:
+Ensure Bootstrap JS and Popper.js are included in your project.
+Use the data-bs-toggle="tooltip" attribute on an element.
+Example:
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+    Hover me
+</button>
+2.Initialize Tooltips:
+Enable them using JavaScript:
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+
+Other Bootstrap Components
+1.Alerts:
+Used to display important messages.
+
+2.Buttons:
+Pre-styled buttons with various types (btn-primary, btn-danger).
+
+3.Modals:
+Popup dialogs for displaying content.
+
+4.Navbar:
+For responsive navigation headers.
+
+
+

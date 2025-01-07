@@ -1,0 +1,91 @@
+Day-24,August-19th
+
+Types of for loop
+
+1. for...of Loop
+Used to iterate over iterable objects like arrays, strings, or sets. It retrieves values from the iterable.
+
+Syntax:
+for (const value of iterable) {
+    
+}
+
+Example:
+
+const colors = ["red", "green", "blue"];
+for (const color of colors) {
+    console.log(color); // Outputs: red, green, blue
+}
+
+2. for...in Loop
+Used to iterate over the keys/properties of an object or the indices of an array.
+
+Syntax:
+for (const key in object) {
+    
+}
+
+Example with an Object:
+
+const person = { name: "Alice", age: 25 };
+for (const key in person) {
+    console.log(`${key}: ${person[key]}`);
+    // Outputs:
+    // name: Alice
+    // age: 25
+}
+
+Example with an Array:
+
+const numbers = [10, 20, 30];
+for (const index in numbers) {
+    console.log(index); // Outputs: 0, 1, 2
+    console.log(numbers[index]); // Outputs: 10, 20, 30
+}
+
+3. while Loop
+Executes as long as the condition is true.
+
+Syntax:
+while (condition) {
+    
+}
+
+Example:
+
+let count = 0;
+while (count < 3) {
+    console.log(count); // Outputs: 0, 1, 2
+    count++;
+}
+
+4. do...while Loop
+Executes the block at least once, then continues as long as the condition is true.
+
+Syntax:
+do {
+    
+} while (condition);
+
+Example:
+
+let count = 0;
+do {
+    console.log(count); // Outputs: 0, 1, 2
+    count++;
+} while (count < 3);
+
+5.forEach Loop (Array Method)
+Iterates over each element in an array. It’s a method of the Array object and not part of JavaScript's loop statements.
+
+Syntax:
+array.forEach((value, index, array) => {
+    
+});
+
+Example:
+
+const numbers = [1, 2, 3];
+numbers.forEach((num) => {
+    console.log(num); // Outputs: 1, 2, 3
+});

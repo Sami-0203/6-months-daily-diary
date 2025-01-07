@@ -1,0 +1,97 @@
+Day-45,September-19th
+
+What is Node.js?
+Node.js is a runtime environment that allows you to run JavaScript on the server side. Built on Google Chrome's V8 JavaScript engine, it uses an event-driven, non-blocking I/O model, making it efficient and lightweight.
+
+Real-World Applications of Node.js
+API Development: Build REST or APIs.
+Real-Time Applications: Chat apps, live notifications, gaming.
+Microservices: Use frameworks like Express.js or Nest.js.
+Static File Server: Serve HTML, CSS, and JavaScript files.
+Server-Side Rendering (SSR): Use frameworks like Next.js.
+
+Difference Between Server and Backend
+Feature		Server				Backend
+Definition	A physical or virtual 		Logic and operations performed on the server.
+		machine where applications
+		are hosted.	
+Role		Hardware or software that	Includes APIs, database operations, and authentication
+		provides services.	
+Example		AWS server, Apache server.	Express.js, Django, Flask.
+Responsibility	Running applications, 		Processing user requests, communicating with the database.
+		managing traffic.	
+
+History of Node.js
+Inventor: Ryan Dahl in 2009.
+Purpose: Address inefficiencies in handling multiple concurrent requests in web servers (e.g., Apache).
+Key Milestone: Introduction of the npm (Node Package Manager) in 2010.
+Ecosystem Growth: Became widely adopted for building scalable, real-time, and fast applications.
+
+Advantages of Node.js
+Asynchronous and Non-Blocking:
+Handles multiple requests simultaneously without waiting for one to finish.
+
+High Performance:
+Built on V8 JavaScript engine, known for its speed and optimization.
+
+Single Programming Language:
+Use JavaScript for both frontend and backend development.
+
+Scalability:
+Handles a large number of simultaneous connections using event-driven architecture.
+
+Rich Ecosystem:
+Thousands of libraries available via npm.
+
+Cross-Platform Development:
+Build server-side and desktop applications.
+
+Community Support:
+Large and active developer community.
+
+Dev Dependencies vs Dependencies
+Aspect		Dependencies		Dev Dependencies
+Definition	Libraries required	Libraries required only	for development purposes.
+		for the application
+		to run in production.	
+Examples	Express.js, Mongoose.	Jest, ESLint, Webpack.
+Installation	npm install <package>	npm install --save-dev <package>
+Command		
+Usage		Required by the end 	Used for testing, debugging, or building.
+		-user application.
+
+Environmental setup
+
+Install Node.js:
+
+Download from the official website: https://nodejs.org.
+Install the LTS (Long-Term Support) version for stability.
+Verify Installation:
+Check the version of Node.js:
+node -v
+Check the version of npm:
+npm -v
+
+Initialize a Project:
+Create a new folder for the project.
+npm init -y
+This creates a package.json file to manage project dependencies.
+
+Install Dependencies:
+For production dependencies:
+npm install express
+
+For development dependencies:
+npm install --save-dev nodemon
+
+Setup nodemon for Development:
+Add a script to package.json:
+
+Write a Basic Node.js Application:
+Create index.js:
+
+Run the application:
+
+npm run dev
+			
+

@@ -1,0 +1,62 @@
+Day-54,October-9th
+
+Mongo DB, create database, collections
+
+MongoDB is a NoSQL database that stores data in a flexible, JSON-like format called BSON. It is designed for scalability, high performance, and ease of development.
+
+Key Concepts in MongoDB
+Database: A container for collections. Equivalent to a "database" in relational systems.
+Collection: A group of MongoDB documents, equivalent to a table in relational databases.
+Document: A single record in a collection, represented in BSON (Binary JSON).
+
+Setting Up MongoDB
+Install MongoDB: Download and install MongoDB from mongodb.com.
+Mongo Shell: Use the MongoDB shell or any GUI tool like MongoDB Compass for managing databases.
+
+Creating a Database
+MongoDB creates a database automatically when you insert a document into a collection within the database.
+
+// Switch to or create a database
+use myDatabase
+This command switches to myDatabase. If it doesn’t exist, MongoDB creates it when data is added.
+
+Creating a Collection
+A collection is created when you insert the first document into it.
+
+Using the MongoDB Shell:
+// Insert a document into a new collection
+db.myCollection.insertOne({ name: "John", age: 30 });
+
+CRUD Operations (Create, Read, Update, Delete)
+1. Create a Document
+Insert a single document:
+db.myCollection.insertOne({ name: "Alice", age: 25, city: "New York" });
+
+Insert multiple documents:
+db.myCollection.insertMany([
+    { name: "Bob", age: 30, city: "Chicago" },
+    { name: "Charlie", age: 35, city: "San Francisco" }
+]);
+
+2. Read Documents
+Find all documents:
+db.myCollection.find();
+
+Find with a condition:
+db.myCollection.find({ city: "New York" });
+
+Find one document:
+db.myCollection.findOne({ name: "Alice" });
+
+3. Update Documents
+db.myCollection.updateMany(
+    { city: "Chicago" },         // Filter condition
+    { $set: { state: "Illinois" } } // Update operation
+);
+
+4. Delete Documents
+Delete a single document:
+db.myCollection.deleteOne({ name: "Alice" });
+
+
+

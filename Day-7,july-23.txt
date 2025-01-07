@@ -1,0 +1,21 @@
+Day-7,july-23
+First we have done recap of session
+
+Font Style property
+
+The font-style property in CSS specifies whether the text is normal, italicized, or oblique.
+
+Syntax:
+
+font-style: normal | italic | oblique | initial | inherit;
+
+
+
+Font Weight property
+
+The font-weight property defines the thickness (or boldness) of the text.
+
+Syntax:
+css
+Copy code
+font-weight: normal | bold | bolder | lighter | <number> | initial | inherit;

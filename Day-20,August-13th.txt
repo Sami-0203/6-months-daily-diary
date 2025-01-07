@@ -1,0 +1,41 @@
+Day-20,August-13th
+
+What are operators and different types of operators.
+
+In JavaScript, operators are special symbols or keywords used to perform operations on values or variables. They manipulate data and return a result.
+
+Here’s a breakdown of different types of operators in JavaScript:
+
+1. Arithmetic Operators
+Used for mathematical calculations.
+Example:
++,-,*,%,++(increment add 1),--(decrement subtract 1).
+
+2.Assignment Operator
+Used to assign values to variables.
+Example:
+=(Assignment),+=(Add and assign),-=(Subtract and assign),*=(Multiply and assign),/=(Divide and assign),%=(Modulus and assign).
+
+3.Logical Operators
+Used for logical operations, often with Boolean values.
+Example:
+&&(Logical AND),`(Logical OR),!(Logical NOT).
+
+4. Bitwise Operators
+Operate at the bit level.
+Example:
+&(AND),	`(OR),^(XOR),~(NOT),<<(Left shift),>>(Right shift).
+
+5.String Operators
+Operate on strings.
+Example:
++(Concatenation),+=(Add and assign concatenation)
+
+6.Ternary Operator
+A shorthand for conditional expressions.
+Example:
+condition ? value1 : value2	5 > 3 ? "Yes" : "No"	"Yes"
+
+
+
+

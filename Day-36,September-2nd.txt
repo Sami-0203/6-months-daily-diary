@@ -1,0 +1,39 @@
+Day-36,September-2nd
+
+Pure components in class based components 
+
+A PureComponent is a special type of class component in React that automatically implements shouldComponentUpdate() with a shallow comparison of props and state. This can lead to performance improvements because React will skip re-rendering if the props and state have not changed.
+
+In a typical React class component, the shouldComponentUpdate() method needs to be manually defined to optimize re-renders. However, PureComponent does this automatically for you by performing a shallow comparison of the previous and next props and state.
+
+Key Features of PureComponent
+Automatic Shallow Comparison: React checks whether the props or state have changed by performing a shallow comparison (it only compares the immediate properties, not deeply nested ones).
+
+Prevents Unnecessary Re-renders: If the new props and state are the same as the previous ones, React will skip re-rendering the component, thus improving performance.
+
+Inheritance: PureComponent is a subclass of React.Component. You can use PureComponent the same way as a regular class-based component, but with added optimization.
+
+
+useMemo Hook in React (Function-based Components)
+The useMemo hook is a part of React's Hooks API and is used to memorize expensive function calls or computations. It ensures that the function is recomputed only when certain dependencies have changed, which can help improve the performance of your component.
+
+What Does useMemo Do?
+useMemo is used to memoize a computed value (i.e., save the result of a function call) so that it is recomputed only when specific dependencies change. This can prevent unnecessary re-computations, particularly for expensive calculations, and can boost performance in some scenarios.
+
+Memoization: It stores the result of a calculation and only recalculates the value when its dependencies change.
+Performance Optimization: It helps avoid recalculating values during each render, especially if the value is computationally expensive or if it's being used by multiple components.
+
+Syntax of useMemo
+const memoizedValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]); // The value is recomputed only when `a` or `b` change
+() => {}: The function that performs the computation.
+[a, b]: An array of dependencies. The computation is only recalculated when one of these dependencies changes.
+
+When to Use useMemo
+Expensive Calculations: When you have a function that performs an expensive calculation (e.g., complex filtering, sorting, or calculations), using useMemo can save the result and avoid recalculating it on every render.
+Reference Equality: If you need to maintain the same object reference across renders (e.g., when passing objects or arrays as props to child components), useMemo can be used to ensure that the reference remains the same until the dependencies change.
+
+Performance Consideration:
+Overuse of useMemo: While useMemo can improve performance in some cases, using it excessively or unnecessarily can lead to more complexity without significant performance benefits. For simple values or computations, it's often better to let React handle re-renders naturally.
+Use Case: It's most effective when you're dealing with complex computations, expensive function calls, or passing new objects/arrays as props to child components.

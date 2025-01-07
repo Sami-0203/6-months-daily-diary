@@ -1,0 +1,64 @@
+Day-52,October-7th
+
+Middleware in express
+
+Middleware in Express.js is a key feature that allows you to execute functions during the lifecycle of a request. It sits between the request and response and can modify the request, response, or terminate the request-response cycle.
+
+What is Middleware?
+
+Middleware functions are functions that:
+Have access to the request object (req), response object (res), and the next middleware function (next).
+Can execute code, modify the request/response, or end the request-response cycle.
+Call the next() function to pass control to the next middleware.
+
+Types of Middleware
+
+Built-in Middleware:
+Provided by Express to handle common tasks.
+express.json(): Parses incoming JSON payloads.
+express.urlencoded(): Parses URL-encoded data (e.g., form submissions).
+express.static(): Serves static files.
+
+Third-party Middleware:
+Installed via npm to add functionality.
+morgan: For logging HTTP requests.
+cors: For enabling Cross-Origin Resource Sharing.
+cookie-parser: For parsing cookies.
+
+Application-Level Middleware:
+Custom middleware defined in your application.
+
+Router-Level Middleware:
+Middleware bound to specific routers.
+
+Error-Handling Middleware:
+Middleware designed to handle errors.
+
+How to Use Middleware
+Application-Level Middleware
+Middleware that applies to all routes.
+
+Third-Party Middleware
+Install a third-party middleware using npm and apply it
+
+Router-Level Middleware
+Attach middleware to specific routers.
+
+Error-Handling Middleware
+Error-handling middleware has four arguments: (err, req, res, next).
+
+Order of Middleware
+The order in which middleware is defined is important because middleware is executed sequentially.
+
+Common Middleware Use Cases
+
+Authentication: Validate user tokens or session data.
+
+Data Parsing: Parse incoming JSON or form data using express.json().
+
+Static File Serving: Serve static files like images, CSS, and JavaScript.
+app.use(express.static('public'));
+Logging: Use morgan to log HTTP requests.
+
+Error Handling: Catch and handle errors gracefully.
+

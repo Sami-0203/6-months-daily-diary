@@ -1,0 +1,123 @@
+Day-4, july-18
+
+What are selectors?
+
+A CSS selector is a pattern used to target specific HTML elements that you want to style. Selectors allow you to apply styles to elements based on their attributes, hierarchy, or states.
+
+Types of selectors?
+
+CSS selectors are classified into the following types:
+
+1. Universal Selector (*)
+Targets all elements on the page.
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+2. Type Selector
+Targets all elements of a specific type (HTML tag).
+
+p {
+    color: blue;
+}
+
+3. ID Selector (#)
+Targets an element with a specific ID.
+
+#my-id {
+    font-size: 20px;
+}
+4. Group Selector (,)
+Targets multiple elements at once.
+
+h1, h2, p {
+    font-family: Arial, sans-serif;
+}
+
+5. Attribute Selector
+Targets elements based on their attributes.
+css
+Copy code
+input[type="text"] {
+    border: 1px solid black;
+}
+
+
+How to use selectors?
+
+Selectors are used in combination with declarations to style elements.
+
+The syntax is:
+
+selector {
+    property: value;
+}
+
+Example:
+HTML:
+<div class="container" id="main">
+    <p>This is a paragraph.</p>
+    <p class="highlight">This is a highlighted paragraph.</p>
+</div>
+
+CSS:
+/* Using ID selector */
+#main {
+    background-color: lightgray;
+}
+
+/* Using class selector */
+.highlight {
+    color: red;
+}
+
+/* Using descendant selector */
+.container p {
+    font-size: 16px;
+}
+
+Division tag
+
+Division Tag (<div>)
+The <div> tag is a block-level HTML element used to group other elements together for styling or scripting purposes. It’s commonly used as a container for layout and structure.
+
+Example:
+html:
+
+<div class="box">
+    <h1>Welcome</h1>
+    <p>This is a div example.</p>
+</div>
+
+Styling the <div> in CSS:
+
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+Various properties in CSS
+
+Various CSS Properties
+CSS properties define how elements are styled. Here are some commonly used ones:
+
+1. Text Properties
+color: Text color.
+font-size: Size of the font.
+font-family: Font type.
+text-align: Alignment of text.
+line-height: Space between lines.
+2. Box Model Properties
+width / height: Dimensions of the element.
+margin: Space outside the element.
+padding: Space inside the element.
+border: Border around the element.
+3. Background Properties
+background-color: Background color.
+background-image: Background image.
+background-size: Size of the background image.
+text-align: center;
+}

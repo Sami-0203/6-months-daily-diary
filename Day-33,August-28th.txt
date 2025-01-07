@@ -1,0 +1,43 @@
+Day-33,August-28th
+
+AJAX (Asynchronous JavaScript and XML)
+AJAX is a technique for creating asynchronous web applications. It allows you to update parts of a web page without reloading the entire page.
+
+Key Methods of AJAX
+AJAX is often implemented using the XMLHttpRequest object or the modern fetch API.
+
+XMLHttpRequest Methods
+
+open(method, URL, async)
+Specifies the HTTP method (e.g., GET, POST) and URL.
+
+send(data)
+Sends the request to the server.
+
+setRequestHeader(header, value)
+Sets custom headers like Content-Type.
+
+abort()
+Cancels an ongoing request.
+
+HTTP Methods in AJAX
+
+GET: Retrieve data from the server.
+POST: Send data to the server for processing.
+PUT: Update data on the server.
+DELETE: Delete data from the server.
+
+CRUD Operations with AJAX
+CRUD stands for Create, Read, Update, Delete. Here's how it maps to HTTP methods:
+
+CRUD Operations	
+Create	-POST(Adds new data).
+Read	-GET(Retrieves existing data).
+Update	-PUT(Modifies existing data).
+Delete	-DELETE(Removes data).
+
+Advantages of AJAX
+1.Asynchronous: Updates parts of the web page without reloading the entire page.
+2.Improved Performance: Reduces server load and bandwidth usage.
+3.Better User Experience: Provides a seamless and faster interaction.
+4.Cross-Platform: Works on various devices and browsers.

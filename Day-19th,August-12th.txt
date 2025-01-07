@@ -1,0 +1,79 @@
+Day-19th,August-12th
+
+Various types of variables and datatype in JavaScript
+
+In JavaScript, variables are used to store data values, and the data stored in variables can belong to various data types. Here's a detailed look at variable types and data types in JavaScript
+
+Variable Declaration
+JavaScript provides three ways to declare variables:
+
+var (old way):
+
+Function-scoped.
+Can be re-declared and updated.
+Hoisted to the top of its scope but initialized as undefined.
+
+var name = "Alice";
+let (block-scoped):
+
+Block-scoped.
+Can be updated but not re-declared in the same scope.
+Not hoisted like var.
+
+let age = 25;
+const (block-scoped, constant):
+
+Block-scoped.
+Cannot be updated or re-declared.
+Must be initialized during declaration.
+
+const pi = 3.14159;
+
+Data Types in JavaScript
+JavaScript has two categories of data types:
+
+1.Primitive Data Types (immutable):
+
+Represent single values.
+Stored directly in the variable.
+
+Data Type	
+String-	Represents textual data.
+Number-	Represents numeric data (integers, floats).
+Boolean-Represents true/false values.	
+Null-	Represents the absence of any object value, null.
+Symbol	Unique and immutable identifiers, Symbol("id").
+
+2.Non-Primitive Data Types (mutable, complex):
+
+Stored as references.
+
+Data Type	
+Object-	Collection of key-value pairs	 
+Array- Ordered collection of values	
+Function-Callable blocks of code	
+
+Special Considerations
+Dynamic Typing:
+
+JavaScript is dynamically typed, meaning a variable can hold any type of data.
+
+let x = 42;      // `x` is a Number
+x = "Hello";     // Now `x` is a String
+
+
+null: Explicitly represents "no value."
+undefined: Indicates that a variable has been declared but not assigned a value.
+
+// Primitive Types
+let name = "Alice";       // String
+let age = 25;             // Number
+let isStudent = true;     // Boolean
+let noValue = null;       // Null
+let uniqueID = Symbol();  // Symbol
+
+// Non-Primitive Types
+let person = { name: "Alice", age: 25 };  // Object
+let numbers = [1, 2, 3, 4];               // Array
+
+

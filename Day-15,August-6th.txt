@@ -1,0 +1,45 @@
+Day-15,August-6th
+
+Grid system in bootstrap
+
+The grid system in Bootstrap is a powerful layout tool that helps you create responsive and consistent designs by dividing the page into a flexible grid structure. Here’s an overview:
+
+Key Features of the Bootstrap Grid System:
+
+1.12-Column Layout:
+The grid system is based on a 12-column structure. You can combine columns to create wider columns by spanning multiple grid columns.
+
+2.Responsive Design:
+The grid adjusts according to the screen size, ensuring your layout looks great on all devices.
+It uses media queries to target different device sizes.
+
+3.Breakpoints:
+Predefined screen size ranges:
+xs (extra small, <576px)
+sm (small, ≥576px)
+md (medium, ≥768px)
+lg (large, ≥992px)
+xl (extra large, ≥1200px)
+xxl (extra-extra large, ≥1400px)
+
+4.Classes:
+container or container-fluid: Defines the grid container.
+row: Creates a horizontal group of columns.
+col or col-{breakpoint}-{size}: Defines a grid column.
+
+How the Grid System Works:
+
+1.Containers:
+Containers provide a wrapper for the grid and content.
+
+2.Rows:
+Rows are horizontal groups of columns.
+Use .row to create a new row.
+
+3.Columns:
+Use .col or .col-{breakpoint}-{size} to define columns.
+
+4.Responsive Columns:
+Define different column sizes for different breakpoints.
+
+

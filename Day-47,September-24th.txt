@@ -1,0 +1,32 @@
+Day-47,September-24th
+
+Modules in node javasript.
+
+In Node.js, modules are reusable blocks of code that encapsulate functionality and can be loaded into other JavaScript files. Node.js uses the CommonJS module system, which allows developers to export and require modules.
+
+Types of Modules in Node.js
+
+1.Core Modules
+These are built into Node.js and come with the installation.
+Core modules provide essential functionalities like working with the file system, creating HTTP servers, buffers, streams, and more.
+Examples:
+fs (File System): For file operations like reading/writing files.
+http: For creating web servers.
+path: For working with file and directory paths.
+os: Provides operating system-related utilities.
+events: Provides an event-driven programming model.
+
+2.Local Modules
+These are modules created by the user in their project.
+Typically, local modules are custom functionalities defined in separate files that you can import as needed.
+Example of a local module:
+File: math.js
+File: app.js
+
+Third-party Modules
+
+These are modules not included with Node.js and need to be installed using the Node Package Manager (NPM).
+Third-party modules are available on the npm registry.
+Examples:
+express: A popular web framework.
+mongoose: For interacting with MongoDB.

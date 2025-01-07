@@ -1,0 +1,76 @@
+Day-18th,August-9th
+
+Basics of JavaScript
+
+JavaScript is a versatile, lightweight programming language commonly used to create interactive and dynamic web applications. It is a core technology of the web alongside HTML and CSS.
+
+1. What is JavaScript?
+Definition: JavaScript (JS) is a lightweight, interpreted programming language used to create dynamic and interactive effects within web browsers.
+Execution: Runs in the browser (client-side) or on a server (server-side with environments like Node.js).
+
+2. How to Include JavaScript in a Web Page?
+You can include JavaScript in three ways:
+
+Inline:
+<button onclick="alert('Hello!')">Click Me</button>
+
+Internal:
+<script>
+    console.log('Hello, World!');
+</script>
+
+External File:
+Save JavaScript in a .js file (e.g., script.js) and link it:
+
+<script src="script.js"></script>
+
+3. JavaScript Basics
+
+1.Variables
+Variables store data values. Use let, const, or var to declare variables:
+
+let: For variables that can be reassigned.
+const: For constants that cannot be reassigned.
+var: Older syntax (not recommended).
+
+2.Data Types
+Primitive Types:
+String: "Hello"
+Number: 42, 3.14
+Boolean: true, false
+Null: Represents "nothing"
+Undefined: Variable declared but not initialized
+Symbol: Unique identifier
+
+Objects: Collections of key-value pairs, arrays, or functions.
+
+3.Operators
+Arithmetic: +, -, *, /, %
+Comparison: ==, ===, !=, !==, >, <, >=, <=
+Logical: &&, ||, !
+
+4. Basic Syntax
+
+Conditionals:
+Control flow using if, else, else if
+
+Loops:
+Perform repetitive tasks
+
+For Loop:
+It is a control flow statement for specifying iteration.
+
+While Loop:
+Is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition.
+
+5. Functions
+Reusable blocks of code ,multiple statement and condition can be executed within function.
+
+Rules to define a function
+function name cannot start with a number.
+functions cannot have space between them.
+function can be written in camel case.
+
+
+
+

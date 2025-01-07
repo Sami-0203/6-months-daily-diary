@@ -1,0 +1,87 @@
+Day-30,August-25th
+
+How to use/store data in local storage, set item, get item, json.stringify, how to create calculator, json.onparse
+
+
+Local Storage in JavaScript
+Local storage is a web storage API that allows developers to store data in the browser persistently. Data in local storage is saved as key-value pairs and does not expire (it remains even after the browser is closed).
+
+1. Basic Methods:
+setItem(key, value): Stores a value with a specific key in local storage.
+getItem(key): Retrieves the value stored under a specific key.
+removeItem(key): Removes the value associated with a specific key.
+clear(): Clears all key-value pairs in local storage.
+
+Storing and Retrieving Complex Data (Objects)
+Local storage only stores strings. Use JSON.stringify() to convert objects into strings before storing them, and JSON.parse() to convert them back into objects when retrieving.
+
+2. Creating a Simple Calculator Using Local Storage
+Here’s how to create a basic calculator and store the last calculation in local storage:
+
+Components of a Basic Calculator:
+HTML Structure:
+
+Input fields to enter numbers.
+Buttons for arithmetic operations (+, -, *, /).
+A display area for the result.
+JavaScript Logic:
+
+Capture user input.
+Perform calculations based on the operation selected.
+Display the result.
+
+How It Works:
+
+HTML Structure:
+Two <input> fields (num1 and num2) allow the user to enter numbers.
+Four <button> elements correspond to the arithmetic operations (+, -, *, /).
+A <h2> element (id="result") displays the calculation result.
+
+JavaScript Functionality:
+The calculate(operator) function is called when a button is clicked.
+parseFloat() converts the user input from strings to numbers.
+Input validation ensures both fields contain valid numbers.
+A switch statement performs the operation based on the operator passed to the function.
+Division by zero is handled with a specific error message.
+The result is displayed by updating the text content of the result element.
+
+Features:
+
+Real-Time Calculation:
+Each button triggers a calculation based on the current input values.
+
+Error Handling:
+Ensures inputs are valid numbers.
+Prevents division by zero.
+
+User-Friendly Display:
+Results and errors are clearly displayed in the #result area.
+
+Explanation of Concepts Used
+
+JSON.stringify()
+Converts a JavaScript object into a JSON string. This is essential for storing complex data in local storage.
+
+let user = { name: "John", age: 25 };
+let jsonString = JSON.stringify(user);
+localStorage.setItem("user", jsonString);
+
+JSON.parse()
+Converts a JSON string back into a JavaScript object.
+
+let jsonString = localStorage.getItem("user");
+let user = JSON.parse(jsonString);
+console.log(user.name); // Output: "John"
+
+Use Cases of Local Storage
+1.Storing User Preferences (e.g., theme settings, language selection).
+2.Saving Form Data (e.g., draft inputs, last session).
+3.Persisting Data Across Sessions (e.g., cart data, login tokens).
+
+Limitations of Local Storage
+1.Maximum storage size is typically 5MB per domain.
+2.Data is stored as strings only.
+3.Not secure for storing sensitive data (e.g., passwords).
+
+
+

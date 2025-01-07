@@ -1,0 +1,56 @@
+Day-34,August-29th
+
+Class-Based Components in React
+In React, class-based components are a way to define components using JavaScript classes. These components were the primary method for creating stateful components before the introduction of React Hooks in functional components.
+
+Syntax of Class-Based Components
+
+A class-based component:
+Extends React.Component.
+Implements the render() method to return JSX.
+
+Key Features of Class-Based Components
+
+1.State:
+Class components can maintain and manage their internal state using this. State
+
+2.Lifecycle Methods:
+Class components have lifecycle methods to control behavior at different phases of a component's lifecycle:
+
+Mounting: constructor(), componentDidMount().
+Updating: componentDidUpdate().
+Unmounting: componentWillUnmount()
+
+3.Props:
+Props are accessed in class components via this.props.
+
+Lifecycle Methods
+There are three phases
+
+1. Mounting Phase
+Methods executed when a component is initialized and added to the DOM.
+
+constructor(props):
+Called before the component is mounted.
+Used for setting the initial state and binding event handlers.
+
+componentDidMount():
+
+Called after the component is mounted.
+Ideal for side effects like data fetching, subscriptions, or DOM manipulations.
+
+2. Updating Phase
+Methods executed when props or state changes cause a re-render.
+
+componentDidUpdate(prevProps, prevState,):
+
+Called after the component is updated.
+Ideal for DOM manipulations or making network requests based on updated state or props.
+
+3. Unmounting Phase
+Methods executed when a component is removed from the DOM.
+
+componentWillUnmount():
+
+Called before the component is unmounted and destroyed.
+Ideal for cleanup tasks like removing event listeners or canceling API requests.

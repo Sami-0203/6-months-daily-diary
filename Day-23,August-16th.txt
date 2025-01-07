@@ -1,0 +1,66 @@
+Day-23,August-16th
+
+For loop with example
+
+Here are some examples of for loops in JavaScript to illustrate different use cases:
+
+Basic for Loop
+Iterating through numbers from 1 to 5.
+
+Example:
+for (let i = 1; i <= 5; i++) {
+    console.log(i); // Outputs: 1, 2, 3, 4, 5
+}
+
+Iterating Over an Array
+Looping through elements of an array.
+
+Example:
+const fruits = ["apple", "banana", "cherry"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]); // Outputs: apple, banana, cherry
+}
+
+
+The syntax of the for loop is:
+
+for (initialExpression; condition; updateExpression) {
+    // for loop body
+}
+
+Function with no return value
+
+In JavaScript, a function with no return value is called a void function. It performs some actions but does not return any value explicitly. When such a function is executed, it implicitly returns undefined.
+
+Example 1: Logging to the Console
+
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+greet("Alice"); // Outputs: Hello, Alice!
+In this example, the function greet logs a greeting to the console but does not return any value.
+
+Example 2: Modifying an Array
+
+function addItem(array, item) {
+    array.push(item);
+}
+
+const myArray = [1, 2, 3];
+addItem(myArray, 4);
+console.log(myArray); // Outputs: [1, 2, 3, 4]
+Here, the function addItem modifies the array directly without returning anything.
+
+Example 3: Event Handlers
+
+document.querySelector("button").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+The anonymous function in the event listener performs an action (displaying an alert) but does not return any value.
+
+Characteristics of Functions with No Return Value
+Implicit Return Value: If no return statement is provided, the function implicitly returns undefined.
+Used for Side Effects: Such functions are often used to perform actions like logging, modifying global or external state, or triggering side effects.
+No return Keyword Required: While it's optional, adding return; explicitly doesn't affect the behavior but can improve readability in some cases.

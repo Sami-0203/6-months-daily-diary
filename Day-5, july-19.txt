@@ -1,0 +1,99 @@
+Day-5, july-19
+
+Margin
+
+The margin property in CSS defines the space outside the border of an HTML element. It creates space between the element and its surrounding elements. Margins are transparent (they do not have color or background).
+
+Longhand Properties of margin and padding
+The longhand properties of margin and padding allow you to specify individual values for each side of an element: top, right, bottom, and left.
+
+1.Longhand Properties for margin.
+You can use the following properties to set margins for specific sides of an element:
+
+margin-top
+
+Sets the margin at the top of the element.
+margin-top: 20px;
+
+margin-right
+Sets the margin on the right side of the element.
+margin-right: 15px;
+
+margin-bottom
+Sets the margin at the bottom of the element.
+margin-bottom: 10px;
+
+margin-left
+Sets the margin on the left side of the element.
+margin-left: 25px;
+
+2.Longhand Properties for padding
+Similarly, the longhand properties of padding allow you to control the space inside the border for each side:
+
+padding-top
+Sets the padding at the top of the element.
+padding-top: 20px;
+
+padding-right
+Sets the padding on the right side of the element.
+padding-right: 15px;
+
+padding-bottom
+Sets the padding at the bottom of the element.
+padding-bottom: 10px;
+
+padding-left
+Sets the padding on the left side of the element.
+padding-left: 25px;
+
+Box-sizing properties
+
+The box-sizing property in CSS controls how the total size of an element (width and height) is calculated. It determines whether padding and border are included in the element's total width and height or not.
+
+1.Content-box (Default):
+
+The width and height apply only to the content.
+Padding and border are added outside the specified width and height.
+Total width = width + padding + border.
+
+box-sizing: content-box;
+
+2.Border-box:
+
+The width and height include the content, padding, and border.
+Padding and border are inside the specified width and height.
+Total width = width (fixed, includes padding and border).
+
+box-sizing: border-box;
+
+When to Use Each?
+Use content-box:
+
+When you need precise control over the size of the content area (e.g., images, precise text areas).
+Use border-box:
+
+When building layouts where you need predictable element sizes, especially with padding and borders. It's the preferred choice for most modern layouts.
+
+Frame tag
+
+The <frame> tag was used in HTML to define a single frame within a frameset. Frames allowed web pages to display multiple HTML documents in the same browser window by dividing it into sections. However, frames are obsolete and were deprecated in HTML5 due to usability, accessibility, and compatibility issues.
+
+How to Insert Maps, Icons, Shorts, and Videos in HTML
+
+You can use various HTML tags and techniques to insert maps, icons, videos (including Shorts), and other multimedia elements into a webpage.
+
+1. Insert a Map
+To embed a map, you can use services like Google Maps or OpenStreetMap with an <iframe> tag.
+
+2.Insert Icons
+Icons can be added using libraries like Font Awesome or Material Icons.
+
+3. Insert Shorts (YouTube Shorts or Short Videos)
+You can embed YouTube Shorts using the <iframe> tag, just like regular videos.
+
+4. Insert Videos
+You can insert videos in HTML using either the <video> tag or by embedding videos from platforms like YouTube.
+
+	
+
+

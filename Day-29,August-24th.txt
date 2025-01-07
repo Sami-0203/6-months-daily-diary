@@ -1,0 +1,36 @@
+Day-29,August-24th
+
+How to create a digital clock, classelementID, Text content property.
+
+Creating a digital clock in JavaScript can be done by updating the text content of an HTML element every second. You can use the setInterval() function to run a function periodically, and the Date object to get the current time. Here's how you can build a simple digital clock:
+
+Step-by-Step Digital Clock Example
+1.Create an HTML element that will display the clock.
+2.Use JavaScript to get the current time.
+3.Update the content of the HTML element using the textContent property.
+4Use setInterval() to update the clock every second.
+
+HTML & JavaScript Example:
+
+HTML Structure:
+
+A <div> element with an id="clock" is created. This is where the time will be displayed.
+
+JavaScript:
+The updateClock() function is defined to get the current time using the Date object.
+The getHours(), getMinutes(), and getSeconds() methods are used to extract the hours, minutes, and seconds.
+Leading zeros are added to the time components (e.g., 09 for hours or minutes) if they are less than 10.
+The time is then formatted as a string (HH:MM:SS) and assigned to the textContent of the clock element using document.getElementById("clock").textContent = timeString;.
+The setInterval() function is used to call the updateClock() function every 1000 milliseconds (1 second), so the clock updates in real-time.
+
+CSS Styling:
+Basic styling is applied to the clock element to make it visually appealing (e.g., large font size and center alignment).
+
+Key Concepts Used:
+getElementById(): This method is used to find the HTML element with the ID clock.
+textContent: This property sets or returns the text content of an element. In this case, it updates the clock's displayed time.
+setInterval(): This method repeatedly executes a function every specified number of milliseconds. Here, it's used to update the clock every second.
+
+Result:
+When you open the HTML file in a browser, you'll see a digital clock that updates every second. The time will be displayed in the format HH:MM:SS.
+

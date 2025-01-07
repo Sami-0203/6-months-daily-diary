@@ -1,0 +1,47 @@
+Day-32,August-27th
+
+Promises in Asynchronous JavaScript with example , Math.Random
+
+The promise object represents the eventual complexion or failure of an asynchronous operation and its resulting values
+
+States of a Promise
+Pending: The initial state, neither fulfilled nor rejected.
+Fulfilled: The operation completed successfully.
+Rejected: The operation failed.
+
+Methods for Handling Promises
+then(): Executes when the promise is fulfilled.
+catch(): Executes when the promise is rejected.
+finally(): Executes after the promise is either fulfilled or rejected.
+
+Syntax:
+1.new promise()
+2.new promise function({
+})
+3.new promise(function(resolve, reject){
+
+if(condition){
+resolve("Success")
+}else{
+reject("fail")
+}
+})
+
+Math.random()
+The Math.random() function returns a random floating-point number between 0 (inclusive) and 1 (exclusive).
+
+Examples of Math.random Usage
+
+1.Generating Random Numbers Between 0 and 1
+2.Generating a Random Integer Between Two Values To generate a random integer between min and max:
+
+Combining Promises with Math.random()
+Simulating a random operation that either succeeds or fails based on a random value.
+
+Why Use Promises?
+Avoid Callback Hell: Promises provide a cleaner way to handle asynchronous operations.
+Chaining: Multiple asynchronous operations can be chained together with then().
+Error Handling: Easier to catch and handle errors compared to callbacks.
+Using promises with asynchronous operations like fetch, timers, or random simulations makes JavaScript code more readable and maintainable.
+
+

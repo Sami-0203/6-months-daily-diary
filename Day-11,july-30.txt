@@ -1,0 +1,25 @@
+Day-11,july-30
+
+Create different layouts with Html, CSS language
+
+Here are examples of creating different layouts using HTML and CSS. These layouts cover some commonly used structures like single-column layout, two-column layout, three-column layout, and more advanced layouts like grid-based or flexbox layouts.
+
+
+1. Single-Column Layout
+A simple layout for blogs or articles.
+
+2. Two-Column Layout
+A layout commonly used for blogs with a sidebar.
+
+3. Three-Column Layout
+Commonly used for dashboards or news websites.
+
+4.Grid-Based Layout
+A flexible layout ideal for galleries or portfolios.
+
+5. Full-Page Layout with Header, Footer, and Sidebar
+A typical website layout.
+
+Each of these layouts can be customized further using responsive techniques like media queries to make them adaptable across devices.
+
+

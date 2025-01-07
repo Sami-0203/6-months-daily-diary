@@ -1,0 +1,40 @@
+Day-35,August-30th
+
+What are Props 
+
+Props (short for "properties") are the mechanism by which data is passed from a parent component to a child component in React. They allow components to be dynamic and reusable by passing different data to them from the parent.
+
+Props are read-only, meaning that a component cannot modify the props it receives. They are used to customize or configure child components by providing data or callbacks.
+
+Key Points about Props
+Immutable: Props are immutable from the perspective of the child component. Once they are passed down to a child, the child cannot modify them directly. If the child wants to change the data, it needs to communicate back to the parent via events or callbacks.
+Passed from Parent to Child: Props are used to pass information from a parent component to a child component.
+Customizable: Components can be reused with different data each time by passing different props.
+
+Usage of Props
+
+In React, props are used to pass data from a parent component to a child component. This allows components to be reusable and configurable based on the data passed to them.
+
+1.Parent Component: The parent component passes props to the child component.
+Example: Passing Props from Parent to Child
+
+2.Child Component: The child component receives props as an object and uses them.
+Example: The Parent component passes two props
+The Child component receives them via this.props and displays them.
+
+Basic Example of Using Props
+Let's walk through an example where we pass different props from a parent to a child component.
+
+Step 1: Create a Parent Component
+example, the parent component will pass a name and age to the child component.
+
+Step 2: Create a Child Component
+In the child component (ProfileCard), we will receive the name and age props and display them.
+
+The ParentComponent passes two props to ProfileCard: name and age.
+ProfileCard uses props.name and props.age to access and display the data
+
+Props Types
+1.Primitive Types: Strings, numbers, booleans.
+2.Arrays and Objects: Complex data like arrays, objects, and functions can also be passed as props.
+3.Children Prop: React allows passing child elements (components, strings, etc.) through the children prop.

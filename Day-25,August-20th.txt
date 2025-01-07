@@ -1,0 +1,65 @@
+Day-25,August-20th
+
+Box model in JavaScript (Alert, Prompt and Confirm)
+
+The box model in JavaScript refers to the use of built-in dialog boxes for interacting with users. These dialog boxes are part of the browser's API and include alert, prompt, and confirm. They temporarily pause the script execution until the user responds, making them synchronous.
+
+1. alert()
+The alert() method displays a message to the user in a dialog box with an OK button.
+
+Syntax:
+alert(message);
+message: A string (or value )to display.
+
+Example:
+
+alert("This is an alert box!");
+Purpose: Used to display informational or warning messages.
+Limitations: Cannot capture user input; it's purely informational.
+
+2. prompt()
+The prompt() method displays a dialog box that allows the user to input a value. It contains a text field, a OK button, and a Cancel button.
+
+Syntax:
+prompt(message, defaultText);
+message: A string to display as a message in the dialog box.
+defaultText (optional): A default value for the text field.
+
+Example:
+
+const name = prompt("What is your name?", "Guest");
+if (name) {
+    alert(`Hello, ${name}!`);
+} else {
+    alert("You didn't enter your name!");
+}
+Returns:
+The input entered by the user (as a string).
+null if the user clicks Cancel.
+
+3. confirm()
+The confirm() method displays a dialog box with a message, an OK button, and a Cancel button, allowing the user to make a choice.
+
+Syntax:
+confirm(message);
+message: A string to display in the dialog box.
+
+Example:
+
+const isConfirmed = confirm("Do you want to proceed?");
+if (isConfirmed) {
+    alert("You chose to proceed!");
+} else {
+    alert("You canceled the action.");
+}
+Returns:
+true if the user clicks OK.
+false if the user clicks Cancel.
+
+Characteristics of Alert, Prompt, and Confirm
+
+1.Synchronous Behavior: These methods block further script execution until the user interacts with the dialog box.
+2.Simple UI: The appearance is controlled by the browser and cannot be customized.
+3.Browser-Specific Implementation: Slight differences in appearance or behavior may exist between browsers.
+4.Accessibility Issues: Dialog boxes can disrupt the user experience and are considered intrusive.
+5.Use Cases: They are ideal for quick, simple interactions but not recommended for complex UI/UX designs.

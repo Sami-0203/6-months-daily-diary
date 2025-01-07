@@ -1,0 +1,64 @@
+Day-40,September-6th
+
+What is Redux?
+
+Redux is a predictable state container for JavaScript applications. It is often used with React to manage the state of the application in a consistent and structured way. Redux helps to maintain and manage the application's state globally, making it easier to share data across components, especially in large and complex applications.
+
+Redux is based on three core principles:
+
+Single Source of Truth: The state of your entire application is stored in a single JavaScript object called the store. This makes it easier to debug and track the state of the application because everything is in one place.
+
+State is Read-Only: The only way to change the state is by dispatching an action. This ensures that the flow of data is predictable and traceable.
+
+Changes are Made with Pure Functions: To specify how the state is transformed, you write reducers. Reducers are pure functions that take the previous state and an action, and return a new state. They don't mutate the original state but instead return a modified copy.
+
+The 4 Pillars of Redux
+The four pillars of Redux can be thought of as the essential concepts or components that Redux relies on for managing state in an application.
+
+These pillars are:
+
+1.Store:
+The store is the central place where the state of the entire application is stored. It can be accessed by all components, ensuring that the application has a single source of truth.
+
+2.Actions:
+Actions are plain JavaScript objects that describe an event or action that has occurred in the application. Every action must have a type property, and it can optionally contain a payload (additional data).
+
+3.Reducers:
+A reducer is a function that determines how the state changes based on the action dispatched. Reducers are pure functions that take the current state and the action and return a new state.
+
+4.Dispatch:
+Dispatch is the method used to send an action to the Redux store to update the state. When an action is dispatched, the store uses the appropriate reducer to modify the state.
+
+Components in Redux and React
+In React and Redux, components play a crucial role in rendering the UI based on the state. There are two types of components:
+
+1.Class Components:
+Class components are ES6 classes that extend React.Component and can hold state and lifecycle methods.
+
+2.Function Components:
+Function components are simpler components that are written as functions. They can use React hooks such as useState, useEffect, and useDispatch to manage state and side effects.
+
+Connecting Redux to Components:
+To connect Redux with React components, you use connect() or useSelector (for function components) to access the Redux store's state, and useDispatch to dispatch actions.
+
+Class-based components
+Function-based components (using useSelector and useDispatch)
+
+Linking Components with Redux
+
+In React, components are linked to Redux:
+
+1.useSelector: A hook to access the state from the Redux store.
+2.useDispatch: A hook to dispatch actions to the Redux store.
+3.connect(): A higher-order function used to connect a React component to the Redux store in class-based components.
+
+File Structure System in a React + Redux Application
+A well-organized file structure is essential for maintaining large React and Redux applications. Here's a basic structure for a React-Redux application:
+
+/components: This folder holds all the reusable React components. In a large app, you can categorize them by features or modules.
+/redux: Contains everything related to Redux.
+actions: Defines action creators that dispatch actions.
+reducers: Contains the reducers that manage the state transformation.
+store.js: Configures the Redux store, where you apply middleware like Redux DevTools.
+/hooks: Store custom React hooks.
+/utils: General utility functions that are used throughout the application.

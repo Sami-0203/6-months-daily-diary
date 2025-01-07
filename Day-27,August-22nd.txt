@@ -1,0 +1,99 @@
+Day-27,August-22nd
+
+Advance JavaScript
+
+DOM and Methods of DOM
+
+DOM:
+Document object model is a technology with the help of which we can completely control any html document with the help of JavaScript, we can also change or manipulate any id, class, attribute, tag.
+
+Key Concepts of the DOM
+Document Tree: The DOM represents the document as a tree-like structure.
+Each element, attribute, and text in the document is represented as a node in the tree.
+
+Nodes: The DOM has various types of nodes:
+Element Nodes: Represent HTML tags (e.g., <div>, <p>).
+Text Nodes: Represent the text content inside elements.
+Attribute Nodes: Represent attributes of elements (e.g., id, class).
+
+Dynamic Interaction: Using JavaScript, you can interact with the DOM to:
+Add, remove, or modify elements.
+Change styles or attributes.
+Respond to user events like clicks, key presses, etc.
+
+Real DOM:
+The real DOM is actual DOM that is present in the browser, it is the actual tree structure of web page.
+
+Virtual DOM:
+It is faster than real DOM, contains additional functionalities and directly provide the update.
+
+Common Methods of the DOM
+The DOM provides numerous methods to interact with web documents. Here are the most commonly used ones:
+
+1. document.getElementById()
+This method is used to select an element from the DOM by its id attribute. It returns the first matching element or null if no element with the given id exists.
+
+Syntax:
+document.getElementById(id);
+id: The id attribute of the element you want to retrieve.
+
+Syntax:
+To get the value of an element:
+
+document.getElementById("elementId").value;
+
+To set the value of an element:
+document.getElementById("elementId").value = "newValue";
+
+2. Event Listeners
+Event listeners are a key part of JavaScript's interactivity, allowing you to respond to user actions such as clicking a button, submitting a form, or changing an input field. It listens to some particular events only. Example: on click , on submit ,on change
+
+i)onclick Event Listener
+The click event is triggered when the user clicks on an element like a button or a link.
+
+When the button is clicked, the event listener executes the provided callback function and shows an alert.
+
+ii)on submit Event Listener
+The submit event is triggered when a form is submitted. You can use it to validate the form or prevent the default submission behavior.
+
+When the form is submitted, the event listener prevents the page from reloading (event.preventDefault()).
+It retrieves the input value and displays it in an alert.
+
+iii)on change Event Listener
+The change event is triggered when the value of an input, <select>, or <textarea> element changes and loses focus.
+
+When the user selects a new option from the dropdown and moves away, the event listener retrieves the selected value and displays it in an alert.
+
+3.parseInt()
+parseInt() is not specific to the DOM but is a JavaScript function which parse a string and return an integer.
+
+Parse: To resolve a sentence into its components.
+
+Syntax:
+parseInt(string, radix);
+
+string: The string to convert into an integer.
+radix: The base of the number system to use for parsing or specify which numerical system to be used(used in the syntax of parse).
+
+let a="10,20,30"
+let b=parseint(a)
+document.write(b)
+
+We will get only the 1st value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

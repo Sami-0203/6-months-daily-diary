@@ -1,0 +1,49 @@
+Day-61,October-18th
+
+Create form with react and store that data in database,print in console
+
+To create a form using React and store the data in a MongoDB database, I'll guide you through setting up a React frontend and a Node.js backend. The backend will use Express.js and Mongoose to store the data in MongoDB, while the frontend will use React to collect and send data.
+
+Steps:
+Set up the React frontend to create a form and capture user input.
+Set up the Node.js backend to handle the POST request and store data in MongoDB using Mongoose.
+Print the data in the console both on the backend and frontend to ensure it's working correctly.
+
+1. Create the React Frontend
+First, create a React application.
+-react-app react-form
+cd react-form
+npm start
+
+This will set up a new React application. After it’s set up, we'll create a form to collect user data.
+Creating the Form Component in React
+Inside your src folder, create a new component, for example, UserForm.js.
+Include the Form Component in App.js
+In App.js, import and render the UserForm component.
+
+2. Set Up the Backend (Node.js + Express + Mongoose)
+Now, we will set up a backend using Express.js to handle the POST request from the React form and store the data in MongoDB using Mongoose.
+
+Install Backend Dependencies
+In your backend project folder, initialize a new Node.js project and install necessary dependencies:
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose body-parser cors
+Express: Web framework for handling HTTP requests.
+Mongoose: ODM to interact with MongoDB.
+Body-parser: Middleware for parsing JSON request bodies.
+CORS: Middleware to allow cross-origin requests from the React frontend.
+
+Backend
+Create a file called server.js for the server logic.
+
+3. Run the Server and Frontend
+Run the Backend Server:
+In the backend folder, start the server:
+node server.js
+
+Run the React Frontend:
+In the React project folder, run the React development server:
+npm start
+Now, go to http://localhost:3000 in your browser. You should see the form.

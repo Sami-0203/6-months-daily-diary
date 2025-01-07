@@ -1,0 +1,50 @@
+DAY 1, date-15th July
+
+Meaning of MERN stack
+
+The MERN stack is a popular technology stack used for building full-stack web applications. It consists of four main technologies, each representing a letter in the acronym MERN:
+
+M - MongoDB
+A NoSQL database that stores data in flexible, JSON-like documents. MongoDB is used for database operations and is well-suited for applications that require scalability and flexibility.
+
+E - Express.js
+A web application framework for Node.js that simplifies building web applications and APIs. Express handles the backend logic, including routing and middleware functionality.
+
+R - React.js
+A JavaScript library for building user interfaces. React is commonly used for developing dynamic and interactive front-end components.
+
+N - Node.js
+A JavaScript runtime environment that allows developers to run JavaScript on the server. Node.js is used for building scalable and high-performance backend applications.
+
+What are tags?
+
+Tags are elements used to define the structure and content of a webpage. They are enclosed in angle brackets (<>) and usually come in pairs: an opening tag and a closing tag.
+
+Example - <p>This is a paragraph.</p>
+
+<p>: Opening tag.
+</p>: Closing tag.
+Content: This is a paragraph.
+
+Types of tags
+
+<html>: The root element of an HTML document.
+<head>: Contains metadata, links to stylesheets, and scripts.
+<body>: Contains the visible content of the webpage.
+<br>: Inserts a line break (self-closing tag).
+<a>: Anchor tag for hyperlinks.
+<form>: Defines a form.
+<button>: A clickable button.
+<meta>: Metadata (e.g., character set, viewport) (self-closing tag).
+<script>: Includes JavaScript.
+<style>: Embeds CSS styles.
+<div>: A block-level container.
+
+
+
+
+
+
+
+
+

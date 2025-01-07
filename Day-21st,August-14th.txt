@@ -1,0 +1,108 @@
+Day-21st,August-14th
+
+1. else Statement
+The else statement is used to define a block of code that runs when a condition in an if statement is not true.
+
+Syntax:
+if condition:
+    # Code block if the condition is True
+else:
+    # Code block if the condition is False
+
+Example:
+x = 5
+if x > 10:
+    print("x is greater than 10")
+else:
+    print("x is 10 or less")
+
+2.if-else Statement
+Combines an if condition and an else block to execute one of two possible blocks of code.
+
+Syntax:
+if condition:
+    # Code block if the condition is True
+else:
+    # Code block if the condition is False
+
+Example:
+age = 18
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+3.if-else-if (also called if-elif-else)
+Used for testing multiple conditions. Each condition is checked in sequence, and the first condition that evaluates to True executes its block of code.
+
+Syntax:
+if condition1:
+    # Code block for condition1
+elif condition2:
+    # Code block for condition2
+elif condition3:
+    # Code block for condition3
+else:
+    # Code block if none of the conditions are True
+
+Example:
+marks = 85
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 75:
+    print("Grade: B")
+elif marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: F")
+4. Nested Conditional Statements
+Conditions inside other conditions to create more specific checks.
+
+Syntax:
+if condition1:
+    if condition2:
+        # Code block for condition1 and condition2
+    else:
+        # Code block for condition1 and not condition2
+else:
+    # Code block if condition1 is False
+Example:
+age = 20
+gender = "Male"
+
+if age >= 18:
+    if gender == "Male":
+        print("You are an adult male.")
+    else:
+        print("You are an adult female.")
+else:
+    print("You are not an adult.")
+5. Switch Statement
+Python does not have a built-in switch statement, but similar functionality can be achieved using a dictionary to map cases to actions.
+Example (Using Dictionary):
+
+def switch_example(value):
+    switch = {
+        1: "Case 1",
+        2: "Case 2",
+        3: "Case 3",
+    }
+    return switch.get(value, "Default case")
+
+print(switch_example(1))  # Outputs: Case 1
+print(switch_example(4))  # Outputs: Default case
+Example (Using match-case):
+
+value = 2
+
+match value:
+    case 1:
+        print("Case 1")
+    case 2:
+        print("Case 2")
+    case 3:
+        print("Case 3")
+    case _:
+        print("Default case")
+And we have done question related to it
+

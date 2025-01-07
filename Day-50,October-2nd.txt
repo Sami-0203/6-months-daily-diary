@@ -1,0 +1,28 @@
+Day-50,October-2nd
+
+HTTP module,perform routing with http and express
+
+Routing is a key feature in building web applications. It involves defining how an application responds to various HTTP requests at different paths or endpoints. Both the http module and the express framework can be used for routing in Node.js, but express simplifies the process significantly.
+
+Routing with the http Module
+The http module provides basic functionality to handle routing, but it requires manual parsing of request URLs and methods.
+
+Basic Routing with http
+You must manually check req.url and req.method to determine the route.
+You need to handle data (e.g., POST bodies) with event listeners.
+
+Routing with Express
+Express is a Node.js framework that simplifies the process of routing and handling HTTP requests.
+
+Setting Up Express
+Install Express:
+npm install express
+
+When to Use Each
+http Module:
+Suitable for simple applications with minimal routes.
+Useful for learning and understanding low-level server operations.
+
+Express:
+Ideal for production applications.
+Offers scalability, simplicity, and a large ecosystem of plugins.

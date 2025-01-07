@@ -1,0 +1,39 @@
+Day-28,August-23rd
+
+Create different types of form with DOM.
+
+1. Simple Contact Form
+A basic form with name, email, and a submit button.
+
+2. Login Form
+A form dynamically creates username and password fields with a login button.
+
+3. Registration Form with Multiple Input Types
+A form demonstrates various input types like text, password, email, checkbox, and radio buttons.
+
+4. Student Form
+A form will include fields like Name, Age, Gender, Course, and Submit Button.
+
+Explanation of the Form
+Name: A required text input field to enter the student's name.
+Age: A required number input field to enter the student's age.
+Gender: Two radio buttons to select the student's gender.
+Course: A dropdown (<select>) to choose the course the student is enrolling in.
+Submit Button: A button to submit the form.
+
+How It Works
+Dynamically Created Elements: All form elements (labels, inputs, and buttons) are created dynamically using document.createElement().
+Form Validation: When the form is submitted, the values entered in the fields are retrieved. If all fields are filled, an alert shows the entered details. If any field is left empty, the form alerts the user to fill in all fields.
+Event Listener: The form uses the submit event listener to prevent the default form submission (page reload) and display the input values.
+
+Concatenation: in programming refers to the process of combining two or more strings, arrays, or other types of data into a single entity.
+
+Index of: particular index value of character.
+
+Slice(start, end):The method in JavaScript is used to extract a portion of an array or string and returns a new array or string without modifying the original.
+start: The index at which to begin extraction (inclusive). If not provided, it defaults to 0.
+end: The index at which to end extraction (exclusive). If not provided, it extracts until the end of the array or string.
+
+Trim: The Trim() method is used to remove whitespace from both ends of a string. It does not remove whitespace from the middle of the string.
+
+Split:The split() method is used to split a string into an array of substrings based on a specified delimiter or separator. It returns a new array, and the original string remains unchanged.

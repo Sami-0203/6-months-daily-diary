@@ -1,0 +1,25 @@
+Day-59,October-16th
+
+Create CRUD operation with the help of function of mongoose
+
+CRUD Operations with Mongoose
+Let's create a CRUD (Create, Read, Update, Delete) application with Mongoose.
+
+1. Set Up MongoDB Connection
+2. Define the Schema and Model
+In Mongoose, you define the structure of your data using a schema. Here, we'll create a User model with a name, age, and city.
+3. Create CRUD Functions
+Here we will define four functions to handle the CRUD operations.
+
+Create (Insert): Create a new user.
+Read (Find): Fetch users.
+Update: Modify a user's details.
+Delete: Remove a user from the database.
+
+Mongoose simplifies the interaction with MongoDB by providing an elegant and powerful interface for working with data. By using schemas, models, and queries, you can easily perform CRUD operations in your Node.js applications. The example above shows how to use Mongoose to create, read, update, and delete documents in a MongoDB database.
+
+Key Takeaways:
+Schema: Defines the structure of your documents.
+Model: Represents a collection of documents that you can interact with.
+CRUD Operations: Mongoose provides methods to create, read, update, and delete data.
+Asynchronous Operations: Mongoose operations typically return promises, and async/await is used to handle them cleanly.

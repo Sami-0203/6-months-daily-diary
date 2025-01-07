@@ -1,0 +1,47 @@
+Day-10,july-26
+
+Media query property of different screen sizes
+
+Media queries are a CSS feature that allow you to apply styles based on the characteristics of the device or screen size, such as width, height, resolution, orientation, etc. They are a key component of responsive web design.
+
+Media Query Properties
+
+1.max-width
+Targets devices with screen widths up to a specific size.
+
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+2.min-width
+
+Targets devices with screen widths greater than or equal to a specific size.
+@media (min-width: 1024px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+3.orientation
+
+Targets the orientation of the device.
+portrait: Height is greater than width.
+landscape: Width is greater than height.
+
+@media (orientation: portrait) {
+    body {
+        background-color: pink;
+    }
+}
+
+4.resolution
+
+Targets screen resolution (useful for high-density displays).
+
+@media (min-resolution: 192dpi) {
+    body {
+        background-color: purple;
+    }
+}

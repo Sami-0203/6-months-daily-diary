@@ -1,0 +1,37 @@
+Day-58,October-15th
+
+Mongoose
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a straightforward way to interact with MongoDB, offering powerful tools for managing your MongoDB schema, data validation, and interactions with your database.
+
+Key Features of Mongoose:
+Schema Definition: Mongoose allows you to define the structure of your data using schemas.
+Data Validation: You can set validation rules for fields in your schema, such as required fields, minimum/maximum lengths, and custom validation functions.
+Middleware (Hooks): Mongoose supports middleware to add logic before or after certain operations (e.g., before saving a document or after deleting it).
+Query Building: Mongoose provides a rich API for building queries and working with your database in a more abstract way.
+Model Methods: You can define custom methods to operate on the documents.
+Population: Mongoose can populate data from other collections automatically (like performing JOIN operations in relational databases).
+
+Setting Up Mongoose
+To use Mongoose, follow these steps:
+
+1. Install Mongoose
+npm install mongoose
+
+2. Establish a Connection to MongoDB
+
+const mongoose = require('mongoose');
+
+Creating a Schema and Model
+A schema defines the structure of the documents in a collection, and a model is a wrapper for interacting with that schema in the database.
+
+1. Defining a Schema
+In this, userSchema defines the structure for the User documents in the MongoDB database.
+
+2. Creating a New Document
+3. Reading Documents from MongoDB
+4. Updating a Document
+5. Deleting a Document
+
+Mongoose Middleware (Hooks)
+Mongoose allows you to define middleware (or hooks) to run before or after certain operations. For example, you can perform an action before saving or deleting a document.

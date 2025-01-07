@@ -1,0 +1,36 @@
+Day-26,August-21st
+
+Scoping and types of scoping
+
+Scoping in JavaScript refers to the accessibility of variables, functions, and objects in different parts of the code during execution. It defines where variables can be accessed or modified in your program.
+
+Types of Scoping in JavaScript
+JavaScript primarily supports three types of scoping:
+
+1. Global Scoping
+Variables declared in the global scope are accessible from anywhere or accessed locally in the program.
+These are typically declared outside of any function, block, or module.
+
+let a="Daman"
+document.write(a)
+
+2.Local Scoping
+Variables declared with var inside a function are scoped to that function.
+They cannot be accessed outside or locally in the function.
+
+function abc(){
+	let b="sam"
+	document.write(b)
+	}
+	abc()
+
+3.Lexical Scoping
+JavaScript uses lexical scoping (static scoping), meaning that the scope of a variable is determined by its position in the source code.
+Inner functions have access to variables in their outer functions, even after the outer function has executed(arrow function).
+
+const functionname=()=>{
+	//statement
+}
+	functionname()
+
+Proper understanding of scoping helps in avoiding issues like variable shadowing, unintended modifications, and bugs in larger applications.

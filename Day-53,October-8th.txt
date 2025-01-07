@@ -1,0 +1,36 @@
+Day-53,October-8th
+
+Multer Middleware
+
+Multer is a middleware for handling multipart/form-data, primarily used for file uploads in Node.js applications. It processes incoming files and appends them to the req.file or req.files object.
+
+Installation
+You can install Multer using npm:
+npm install multer
+
+How Multer Works?
+Multer processes incoming form data and:
+
+1.Parses the files sent via multipart/form-data.
+2.Stores the files in a specified location (disk or memory).
+3.Attaches metadata and file information to the req object.
+
+Advanced Configuration
+1. Multiple Files
+To upload multiple files.
+
+2. Multiple Fields
+To upload files from different fields.
+
+3. Memory Storage
+To store files in memory as Buffer objects instead of saving them to disk.
+
+4. File Filtering
+Restrict file uploads by MIME type or other conditions.
+
+5. Set File Size Limits
+To limit file size during uploads.
+
+6.Error Handling
+Multer uses next() to pass errors, which can be handled using an error-handling middleware
+

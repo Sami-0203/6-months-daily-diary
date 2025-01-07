@@ -1,0 +1,6 @@
+Day-22,August-15th
+
+What are functions
+Rules of function
+Syntax
+Function with parameter and arguments
